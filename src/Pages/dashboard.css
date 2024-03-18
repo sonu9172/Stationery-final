@@ -1,0 +1,162 @@
+/* dashboard.css */
+
+/* Sidebar */
+/* dashboard.css */
+
+/* Sidebar */
+#sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 250px;
+	background-color: #fff;
+	color: #000;
+	overflow-y: auto;
+  }
+  
+  .brand {
+	display: block;
+	padding: 20px;
+	text-align: center;
+	color: #000;
+	text-decoration: none;
+	font-size: 1.5rem;
+  }
+  
+  .side-menu {
+	list-style: none;
+	padding: 0;
+  }
+  
+  .side-menu li {
+	padding: 15px 20px;
+	transition: background-color 0.3s ease;
+  }
+  
+  .side-menu li:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .side-menu li.active {
+	background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .side-menu li a {
+	color: #000;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+  }
+  
+  .side-menu li a i {
+	margin-right: 10px;
+  }
+  
+  /* Navbar */
+  nav {
+	background: linear-gradient(to bottom, #acaecd, #a5a9eb);
+	color: #fff;
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 250px;
+	width: calc(100% - 250px); /* Adjust based on the width of the sidebar */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  nav .nav-link {
+	margin: 0 20px;
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  nav form {
+	margin-right: auto;
+  }
+  
+  nav .form-input {
+	position: relative;
+  }
+  
+  nav input[type="search"] {
+	padding: 8px 30px 8px 10px;
+	border-radius: 20px;
+	border: none;
+	width: 200px;
+  }
+  
+  nav .search-btn {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+  }
+  
+  nav .notification {
+	position: relative;
+	margin-left: 20px;
+  }
+  
+  nav .notification .num {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	background-color: #ff4d4d;
+	color: #fff;
+	border-radius: 50%;
+	padding: 5px;
+	font-size: 0.8rem;
+  }
+  
+  nav .profile img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+  }
+  
+  /* Main Content */
+  #content {
+	margin-left: 250px;
+	padding: 20px;
+  }
+  
+  /* Dark Mode */
+  .dark {
+	background-color: #111;
+	color: #fff;
+  }
+  
+  .switch-mode {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+	background-color: #666;
+	border-radius: 20px;
+	cursor: pointer;
+  }
+  
+  .switch-mode::before {
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: #fff;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 2px;
+	transition: transform 0.3s ease;
+  }
+  
+  #switch-mode:checked + .switch-mode::before {
+	transform: translateX(20px);
+  }
+  
