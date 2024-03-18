@@ -41,6 +41,7 @@ function MenuItem({ index, iconClass, text, active, onClick }) {
 function Navbar() {
   return (
     <nav>
+      
       <i className="bx bx-menu"></i>
       <a href="#" className="nav-link">Categories</a>
       <form action="#">
