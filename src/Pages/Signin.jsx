@@ -20,11 +20,11 @@ const LoginPage = () => {
   };
 
   const handleSignIn = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
     try {
       await signInWithEmailAndPassword(auth, email, password);
       alert("Successfully Logged In!");
-      navigate("/dashboard")
+      navigate("/dashboard");
     } catch (error) {
       alert(error.message);
     }
